@@ -18,6 +18,7 @@ public:
         if(left->val!=right->val){
             return false;
         }
+        // this commit
         return solve(left->left,right->right) && solve(left->right,right->left) ;
     }
     bool isSymmetric(TreeNode* root) {
